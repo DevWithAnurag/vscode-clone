@@ -7,13 +7,14 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background-color: #0d1117;
     overflow: hidden;
 }
 
 
 .menu-bar {
-    border-bottom: 1px solid rgb(244, 244, 244);
+    border-bottom: 1px solid rgb(59, 58, 58);
+    background-color: black;
     width: 100%;
     height: 50px;
     display: flex;
@@ -88,7 +89,7 @@ body {
     display: flex;    
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid rgb(229, 229, 229);
+    border-right: 1px solid rgb(59, 58, 58);
 }
 
 .flex-center{
@@ -127,4 +128,53 @@ body {
 .setting-container-image>img{
    width: 30px;
    filter: invert(1);
+}
+
+
+.tab-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    margin-left:48px ;
+    width: 97%;
+    height: 40px;
+background-color: black;
+border-bottom: 1px solid rgb(59, 58, 58);
+}
+
+.opened-container{
+    display: flex;
+    height: 100%;
+}
+
+.opened-tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    width: 130px;
+    height: 100%;
+    background-color: #0d1117;
+    border-right: 1px solid rgb(59, 58, 58);
+}
+
+.opened-tabs>img{
+    filter: invert(1);
+}
+
+.right-side-menu{
+display: flex;
+}
+
+.right-side-menu-image-container>img{
+    cursor: pointer;
+    width: 20px;
+    margin: 15px;
+}
+
+.right-side-menu-image-container>img:hover{
+    background-color: rgb(89, 88, 88);
+    border-radius: 5px;
 }
