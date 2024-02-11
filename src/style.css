@@ -8,11 +8,12 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 
 
 .menu-bar {
-    border-bottom: 2px solid rgb(244, 244, 244);
+    border-bottom: 1px solid rgb(244, 244, 244);
     width: 100%;
     height: 50px;
     display: flex;
@@ -21,7 +22,6 @@ body {
 }
 
 .box {
-    /* width: 300px; */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -30,7 +30,6 @@ body {
 }
 
 .icon-option-container {
-    /* width: 300px; */
     height: 100%;
     display: flex;
     gap: 10px;
@@ -38,7 +37,6 @@ body {
 }
 
 .icon-container {
-    /* width: 100%; */
     height: 100%;
     display: grid;
     place-items: center;
@@ -50,21 +48,20 @@ body {
 }
 
 .options-container {
-    /* width: 100px; */
     height: 100%;
     display: flex;
     gap: 10px;
 }
 
 .droupdown-box {
-    cursor:pointer;
+    cursor: pointer;
     width: 50px;
     height: 100%;
     display: grid;
     place-items: center;
 }
 
-.navigation-menu-image > img{
+.navigation-menu-image>img {
     cursor: pointer;
     filter: invert(1);
     width: 16px;
@@ -72,13 +69,62 @@ body {
     margin: 13px;
 }
 
-.navigation-menu-image{
-transition: all 0.4s;
-}
-.navigation-menu-image:hover{
-background-color: grey;
+.navigation-menu-image {
+    transition: all 0.4s;
 }
 
-.red:hover{
-background-color: red !important;
+.navigation-menu-image:hover {
+    background-color: grey;
+}
+
+.red:hover {
+    background-color: red !important;
+}
+
+
+.side-bar {
+    width: 48px;
+    height: 93vh;
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgb(229, 229, 229);
+}
+
+.flex-center{
+    cursor: pointer;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+}
+.grid-center{
+    display: grid;
+    place-items: center;
+}
+
+
+.explorer-container-image{
+    padding:8px;
+}
+
+.explorer-container-image:hover{
+   border-left: 1px solid red;
+}
+
+.explorer-container-image>img {
+    filter: invert(1);
+    width: 25px;
+}
+
+.setting-container-image{
+    padding:7px;
+}
+
+.setting-container-image:hover{
+   border-left: 1px solid red;
+}
+
+.setting-container-image>img{
+   width: 30px;
+   filter: invert(1);
 }
