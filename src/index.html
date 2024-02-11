@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
     <title>Vs Code - Clone by Anurag Tiwari</title>
 </head>
 
 <body>
 
     <!-- menu bar -->
-    <div class="menu-bar">
+    <!-- <div class="menu-bar">
         <div class="icon-option-container box">
+
             <div class="icon-container">
-                <img src="/assets/Vscode-icon.png" alt="vscode-icon" width="50px">
+                <img src="../assets/Vscode-icon.png" alt="vscode-icon" width="50px">
             </div>
+
             <div class="options-container">
                 <div class="files-dropdown droupdown-box">Files</div>
                 <div class="edit-dropdown droupdown-box">Edit</div>
@@ -27,49 +30,60 @@
                 <div class="help-dropdown droupdown-box">Help</div>
             </div>
         </div>
+
         <div class="navigation-menu box">
             <div id="minimize" class="navigation-menu-image">
-                <img src="/assets/minus.png" alt="minimize">
+                <img src="../assets/minus.png" alt="minimize">
             </div>
             <div id="maximize" class="navigation-menu-image">
-                <img src="/assets/maximize.png" alt="maximize">
+                <img src="../assets/maximize.png" alt="maximize">
             </div>
             <div id="Close" class="navigation-menu-image red">
-                <img src="/assets/close.png" alt="maximize">
+                <img src="../assets/close.png" alt="maximize">
             </div>
         </div>
-    </div>
+    </div> -->
 
+    <!-- tab bar -->
     <div class="tab-bar">
 
         <div class="opened-container">
             <div class="opened-tabs">
-                <h3>file-name</h3>
-                <img src="/assets/close.png" alt="close-tab" style="width: 15px; height: 15px;">
-            </div>
-
-            <div class="opened-tabs">
-                <h3>file-name</h3>
-                <img src="/assets/close.png" alt="close-tab" style="width: 15px; height: 15px;">
-            </div>
-
-            <div class="opened-tabs">
-                <h3>file-name</h3>
-                <img src="/assets/close.png" alt="close-tab" style="width: 15px; height: 15px;">
+                <img src="../assets/js.png" style=" width: 20px; filter: invert(0);" >
+                <h3>main.js</h3>
+                <img src="../assets/close.png" alt="close-tab" style="width: 15px; height: 15px;">
             </div>
         </div>
 
         <div class="right-side-menu">
-            
+
             <div class="run right-side-menu-image-container">
-                <img src="/assets/run.png" alt="" style="filter: invert(1); rotate: 90deg;">
+                <img src="../assets/run.png" alt="" style="filter: invert(1); rotate: 90deg;" onclick="runCode()">
             </div>
 
             <div class="dots right-side-menu-containe right-side-menu-image-container">
-                <img src="/assets/dots.png" alt="">
+                <img src="../assets/dots.png" alt="">
             </div>
 
         </div>
+
+    </div>
+
+    <!-- code condainer where useres can write some codes -->
+    <div id="code-container">
+        <textarea id="user-code" rows="10" cols="50"></textarea>
+
+    </div>
+
+    <div class="output-console">
+        <div class="output-tab">
+            Output
+        </div>
+        <div class="close-output-console"> 
+            <img src="../assets/close.png" style="filter: invert(1); width:20px;" onclick="openConsole();">
+        </div>
+
+        <div id="output">2</div>
 
     </div>
 
@@ -79,30 +93,30 @@
         <div class="explorer-container flex-center">
 
             <div class="files explorer-container-image">
-                <img src="/assets/explorer.png" alt="Explorer">
+                <img src="../assets/explorer.png" alt="Explorer">
             </div>
 
             <div class="Search explorer-container-image">
-                <img src="/assets/search.png" alt="search" style="rotate:90deg;">
+                <img src="../assets/search.png" alt="search" style="rotate:90deg;">
             </div>
 
             <div class="source-control explorer-container-image">
-                <img src="/assets/source-control.png" alt="Source Control">
+                <img src="../assets/source-control.png" alt="Source Control">
             </div>
 
             <div class="extentions explorer-container-image">
-                <img src="/assets/extentions.png" alt="extentions" style="filter: invert(0);">
+                <img src="../assets/extentions.png" alt="extentions" style="filter: invert(0);">
             </div>
         </div>
 
         <div class="settings-container flex-center">
 
             <div class="account-container setting-container-image">
-                <img src="/assets/user.png" alt="Accounts">
+                <img src="../assets/user.png" alt="Accounts">
             </div>
 
             <div class="setting-container setting-container-image">
-                <img src="/assets/settings.png" alt="Setting">
+                <img src="../assets/settings.png" alt="Setting">
             </div>
 
         </div>
